@@ -2,7 +2,7 @@
 // * discuss:  https://leetcode.com/problems/merge-intervals/discuss/716744/JavaScript-Clean-Code
 
 var merge = function(intervals) {
-    if(intervals.length <= 1) return intervals;
+    if (intervals.length <= 1) return intervals;
 
     intervals.sort((a, b) => a[0] - b[0]); // ! sort가 중요
 []
