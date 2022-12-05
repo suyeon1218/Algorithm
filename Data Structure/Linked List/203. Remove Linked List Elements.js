@@ -1,5 +1,7 @@
-// * Data Structure Easy
+// * Easy
 // https://leetcode.com/problems/remove-linked-list-elements/
+// val이 주어질떄, val과 일치하는 값들을 linked List의 요소에서 제거하는 알고리즘 
+
  var removeElements = function(head, val) {
     if (!head) return head;
     

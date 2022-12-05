@@ -1,4 +1,6 @@
-// * https://leetcode.com/problems/merge-two-sorted-lists/submissions/
+// * Easy
+// https://leetcode.com/problems/merge-two-sorted-lists/
+// 서로 다른 두 리스트를 오름차순으로 sort & merge 하는 문제 
 
  var mergeTwoLists = function(list1, list2) {
   let list3 = head = new ListNode();

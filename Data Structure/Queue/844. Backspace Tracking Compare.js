@@ -1,5 +1,18 @@
-// * 2022. 10. 05
+// * Easy
 // Stack : https://leetcode.com/problems/backspace-string-compare/
+
+// * Discuss
+const process = s => {
+    const res = [];
+    for (x of s.split('')) {
+        x === '#' ? res.pop() : res.push(x);
+    }
+    return res.join('')
+}
+
+var backspaceCompare = function(s,t) {
+    return process(s) == process(t);
+}
 
 // * my solution
  var backspaceCompare = function(s, t) {
@@ -29,4 +42,3 @@
   return JSON.stringify(sStack) === JSON.stringify(tStack);
 };
 
-//

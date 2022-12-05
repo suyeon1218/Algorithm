@@ -1,9 +1,8 @@
-// * https://leetcode.com/problems/longest-palindromic-substring/discuss/428331/Javascript-DP
-// 거꾸로 해도 똑같은 문자열 중 가장 긴 subString을 출력하는 문제
+// https://leetcode.com/problems/longest-palindromic-substring/discuss/428331/Javascript-DP
+// 대칭되는 문자열 중 가장 긴 subString을 출력하는 문제
 
 const longestPalindrome = (s) => {
-
-    if (s.length <= 1) {
+    if (s.length <= 1) {  
         return s;
     }
 
@@ -24,7 +23,7 @@ const longestPalindrome = (s) => {
         if(s[i] === s[i+1]) {
             dpList[i][i+1] = true;
         }
-        //그 다음 문자열이 trueaus longPS 바꾸기
+        //그 다음 문자열이 true면 longPS 바꾸기
         if(dpList[i][i+1]) {
             longPS = s.substring(i, i+2);
             // subString이 아니라 substring!

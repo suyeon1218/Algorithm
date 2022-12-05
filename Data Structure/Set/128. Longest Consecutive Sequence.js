@@ -1,6 +1,9 @@
-// * https://leetcode.com/problems/longest-consecutive-sequence/discuss/139940/Simple-JavaScript-O(n)-solution
-// * Map 이 아닌 Set 자료형 사용
+// * Medium
+// https://leetcode.com/problems/longest-consecutive-sequence/
+// 숫자 배열이 주어질 때, 최대 연속으로 이어지는 숫자가 몇개 있는지 return 하는 알고리즘
 
+// * Discuss
+// Set을 이용하여 num + 1이 존재하면 count를 +1 시켜가며 연속되는 숫자를 셈
 function longestConsecutive(nums) {
     if (nums == null || nums.length === 0) return 0;
     
@@ -8,7 +11,7 @@ function longestConsecutive(nums) {
     let max = 0;
   
     for (let num of set) {
-      if (set.has(num - 1)) continue;  // make sure starting from the beginning of sequence
+      if (set.has(num - 1)) continue;
   
       let currNum = num;
       let currMax = 1;
@@ -17,6 +20,7 @@ function longestConsecutive(nums) {
         currNum++;
         currMax++;
       }
+
       max = Math.max(max, currMax);
     }
   

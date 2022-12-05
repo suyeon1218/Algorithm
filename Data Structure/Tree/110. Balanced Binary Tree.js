@@ -1,31 +1,33 @@
-// * 좌우 트리의 높이가 1이하 차이나는 balance Tree 인지 판별하는 문제
-// * https://leetcode.com/problems/balanced-binary-tree/discuss/504898/JavaScript-Solution
+// * Easy
+// https://leetcode.com/problems/balanced-binary-tree/
+//  좌우 트리의 높이가 1이하 차이나는 balance Tree 인지 판별하는 문제
 
+// * Disucss
+// https://leetcode.com/problems/balanced-binary-tree/discuss/504898/JavaScript-Solution
  var isBalanced_1 = function(root) {
     const dfs = (node) => {
         if (node) {
-            // * 왼쪽 트리의 높이 계산
+            // 왼쪽 트리의 높이 계산
             const left = 1 + dfs(node.left);
-            // * 오른쪽 트리의 높이 계산
+            // 오른쪽 트리의 높이 계산
             const right = 1 + dfs(node.right);
-            // * 오른쪽 트리와 왼쪽 트리의 높이 차가 1보다 작으면 밸런스 트리
+            // 오른쪽 트리와 왼쪽 트리의 높이 차가 1보다 작으면 밸런스 트리
             const isBalanced = Math.abs(left - right) <= 1;
-            // * 밸런스 트리면 높이 반환, 아니면 infinity 반환
+            // 밸런스 트리면 높이 반환, 아니면 infinity 반환
             return isBalanced ? Math.max(left, right) : Infinity;
         } else {
-            // * undefined node를 return  => 0과 동일
+            // undefined node를 return  => 0과 동일
             return node;
         }
     }
-    
+    // dfs 탐색으로 돌아온 값이 infinity면 false, 아니면 true 
     return dfs(root) === Infinity ? false : true;
 };
 
-// * 다른 풀이법
-// * https://leetcode.com/problems/balanced-binary-tree/discuss/341286/JS-Recursive-solution-with-comments
+// * Discuss
+// https://leetcode.com/problems/balanced-binary-tree/discuss/341286/JS-Recursive-solution-with-comments
 // ! 효율이 더 좋음 
 // ? 왜 효율이 더 좋을까 
-
 var isBalanced = function(root) {
 	if(!root) {
         return true;
@@ -61,7 +63,6 @@ var isBalanced = function(root) {
         return height;
     }
 
-    // * node를 순회하며 flag가 바뀌거나 바뀌지 않음
     helper(root);
 
     return flag

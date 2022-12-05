@@ -1,5 +1,5 @@
 // * 가능한 BST tree 의 개수
-// * discuss1 각 root를 지정하고 오른쪽 서브트리, 왼쪽 서브트리를 나누기
+// * memorization (DP?)
 // * https://leetcode.com/problems/unique-binary-search-trees/discuss/1150728/Javascript-Recursive-Memo-Explanation
 // * discuss2 ?
 // * https://leetcode.com/problems/unique-binary-search-trees/discuss/488024/JavaScript-Solution-DP-w-Explanation

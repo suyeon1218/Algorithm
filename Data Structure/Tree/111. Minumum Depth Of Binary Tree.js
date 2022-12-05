@@ -1,4 +1,7 @@
-// * Queue + level order 사용하여 최소 depth 값 찾기
+// * Easy
+// https://leetcode.com/problems/minimum-depth-of-binary-tree/
+
+// Queue + level order -> 한 요소라도 right, left 자식이 없으면 거기서 depth return 하면 됨 
  var minDepth = function(root) {
     if (!root) return 0;
     

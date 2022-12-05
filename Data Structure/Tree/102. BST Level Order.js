@@ -1,6 +1,10 @@
-// * level 순회
-// * https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/472672/Javascript-Detailed-line-by-line-solution
+// * Medium
+// https://leetcode.com/problems/binary-tree-level-order-traversal/
+// level order를 구현하는 문제
 
+
+// * Discuss
+// https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/472672/Javascript-Detailed-line-by-line-solution
  var levelOrder = function(root) {
     if (!root) return [];
     

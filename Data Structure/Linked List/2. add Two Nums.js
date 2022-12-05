@@ -1,3 +1,7 @@
+// * Medium
+// https://leetcode.com/problems/add-two-numbers/
+// 서로 다른 linked List 의 element의 숫자를 합해서 새 linked List를 만드는 문제 
+
 const addTwoNumbers = (l1, l2) => {
     const newList = new ListNode();
     let head = newList;

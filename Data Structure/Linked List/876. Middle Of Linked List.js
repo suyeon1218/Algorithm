@@ -1,6 +1,6 @@
-// * 2022.09.30
-//  Leetcode 75 - study Plan - Day5
+//  * Easy
 //  https://leetcode.com/problems/middle-of-the-linked-list/
+// linked list의 절반만을 return 하는 문제 
 
 // * my solution
  var middleNode = function(head) {

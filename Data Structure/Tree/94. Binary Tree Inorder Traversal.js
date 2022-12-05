@@ -1,3 +1,6 @@
+// * Easy : https://leetcode.com/problems/binary-tree-inorder-traversal/
+// 바이너리 이진 트리 전위 순회 
+
 var inorderTraversal = function(root) {
     const stack = [];
     const res = [];

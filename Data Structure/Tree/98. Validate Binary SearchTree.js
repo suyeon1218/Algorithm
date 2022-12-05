@@ -1,7 +1,6 @@
-// * 2022.10.04
-// leetcode 75 study plan - Day 8
+// * Medium
 // https://leetcode.com/problems/validate-binary-search-tree/
-//  각 노드마다 min-max를 설정해줌으로써 min-max 사이의 값인지 검사 
+// 유효한 BST 인지 검사하는 알고리즘 작성
 
 // * discuss
 // https://leetcode.com/problems/validate-binary-search-tree/discuss/529937/javascript-%3A-97-faster-simple-recursion

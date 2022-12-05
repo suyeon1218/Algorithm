@@ -1,8 +1,9 @@
-// * 2022.10.04
-// leetcode 75 study plan - Day 8
+// * Medium
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/?envType=study-plan&id=level-1
+// BST 트리, 노드 p, 노드 q 가 주어질 때 p와 q의 가장 가까운 조상을 찾는 문제 
 
 // * discuss
+// BST 트리임으로 값의 크기로 p와 q를 찾음 
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/discuss/541362/JavaScript-Iterative-Recursive
 // space Complexicy : O(1)
 var lowestCommonAncestor = function(root, p, q) {
@@ -15,7 +16,6 @@ var lowestCommonAncestor = function(root, p, q) {
           break;
       }
   }
-  
   return root;
 }
 

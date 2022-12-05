@@ -1,7 +1,9 @@
-// * Easy : https://leetcode.com/problems/isomorphic-strings/
+// * Easy
+// https://leetcode.com/problems/isomorphic-strings/
 // 두 문자열 s, t가 주어질 때 두 문자열은 서로 치환될 수 있는 형태인가 
 
-// * 내가 문 푼제
+// * Mine
+// 
  var myisIsomorphic = function(s, t) {
     s = s.split(""); 
     t = t.split(""); 
